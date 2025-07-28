@@ -1,5 +1,90 @@
 /* A handy list of color names: https://www.w3schools.com/colors/colors_names.asp */
 
 body {
-    background-color:aquamarine
+background-color: #e6ffe6;
+font-family: 'gadugi';
+color: 001a00;
+font-size: 20px;
+margin: 0;
+padding: 0;
+}
+
+/*nav*/
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #003300;
+    flex-wrap: wrap;/*wrap for small screens*/
+}
+nav a {
+    text-align: center;
+    font-family: 'gadugi';
+    color: wheat;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 15px;
+}
+nav a:hover {
+    background-color: #e6ffe6;
+    font-family: gadugi;
+    color: #001a00;
+    font-weight: bold;
+}
+/*hero*/
+.home-hero {
+    position: relative;
+    text-align: center;
+    color: #001a00;
+}
+.hero-pic img {
+    width: 100%;
+    max-height: 400px;
+    display: block;
+    object-fit: cover;
+}
+.hero-msg {
+    position: absolute;
+    top: 10%;
+    left: 47%;
+    transform: translate(-50%, -20%);
+    z-index: 2;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-family: mv boli;
+    font-weight: 400;
+}
+/*writing on the hero image*/
+.hero-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+     color: #001a00;
+    font-weight: 400;
+}
+h1 {
+    font-family: mv boli;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+/*grid design*/
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.story-grid section {
+  background-color: #004d38;
+  color: #e6ffe6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.story-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
 }
