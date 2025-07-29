@@ -3,7 +3,7 @@
 body {
 background-color: #e6ffe6;
 font-family: 'gadugi';
-color: 001a00;
+color: #001a00;
 font-size: 20px;
 margin: 0;
 padding: 0;
@@ -20,7 +20,7 @@ nav {
 nav a {
     text-align: center;
     font-family: 'gadugi';
-    color: wheat;
+    color: #e6ffe6;
     font-weight: bold;
     text-decoration: none;
     padding: 15px 15px;
@@ -39,7 +39,7 @@ nav a:hover {
 }
 .hero-pic img {
     width: 100%;
-    max-height: 400px;
+    max-height: 500px;
     display: block;
     object-fit: cover;
 }
@@ -53,6 +53,8 @@ nav a:hover {
     border-radius: 12px;
     font-family: mv boli;
     font-weight: 400;
+    text-shadow: 5x;
+    
 }
 /*writing on the hero image*/
 .hero-title {
@@ -68,6 +70,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     margin-top: 5px;
+    text-shadow: 5px;
 }
 /*grid design*/
 .story-grid {
@@ -87,4 +90,135 @@ h1 {
   height: auto;
   display: block;
   border-radius: 0.5rem;
+}
+/*PLAN PAGE*/
+/* styling for table and list sections */
+
+.blade-prep-grid
+.go-time {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #e6ffe6;
+  flex-wrap: wrap;
+}
+
+.blade-list,
+.blade-table,
+.go-time {
+  background-color: #004d3c;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  color: #e6ffe6;
+  flex: 1 1 45%;
+}
+
+.blade-list ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.blade-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #005f4c;
+  color: #e6ffe6;
+}
+
+.blade-table th,
+.blade-table td {
+  border: 2px solid #e6ffe6;
+  padding: 0.75rem;
+  text-align: left;
+  /*background-color: #005f4c;*/
+}
+
+.blade-pic-grid,
+ .event-pic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #e9ffe4;
+}
+
+.blade-card, 
+.event-card {
+  background-color: #004d3c; /* match your home card background */
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  color: #e6ffe6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.blade-card img, 
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.go-pic-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #e6ffe6;
+}
+
+.go-pic-row section {
+  background-color: #004d3c;
+  border: 3px solid green;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  color: #e6ffe6;
+  text-align: center;
+}
+
+.go-pic-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/*READY CHOP*/
+
+
+/*FOOTER*/
+footer {
+  padding: 1.5rem;         /* space inside the footer */
+  margin-top: 2rem;        /* space above the footer */
+  background-color: #004d3c;  /* optional: match your site colors */
+  color: #e6ffe6;
+  text-align: center;
+  border-top: 3px solid green; /* optional: visual separator */
+}
+
+
+@media (max-width: 768px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Make table and list span full width on small screens */
+@media (max-width: 768px) {
+  .prep-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .blade-pic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .go-pic-row {
+    grid-template-columns: 1fr;
+  }
 }
