@@ -8,6 +8,20 @@ font-size: 20px;
 margin: 0;
 padding: 0;
 }
+/* responsiveness */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1, h2, h3, p {
+  font-size: inherit; /* Inherits from body unless you override */
+}
 
 /*nav*/
 nav {
@@ -91,9 +105,14 @@ h1 {
   display: block;
   border-radius: 0.5rem;
 }
-/*PLAN PAGE*/
+/*BEHIND THE BLADES PAGE*/
 /* styling for table and list sections */
 
+.blades-page .hero-msg {
+  top: 15%; /* Move down the text */
+  left: 20%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
 .blade-prep-grid
 .go-time {
   display: flex;
@@ -190,23 +209,20 @@ h1 {
 
 /*FOOTER*/
 footer {
-  padding: 1.5rem;         /* space inside the footer */
-  margin-top: 2rem;        /* space above the footer */
-  background-color: #004d3c;  /* optional: match your site colors */
+  padding: 1.5rem;         
+  margin-top: 2rem;        
+  background-color: #004d3c;  
   color: #e6ffe6;
   text-align: center;
-  border-top: 3px solid green; /* optional: visual separator */
+  border-top: 3px solid green; 
 }
 
-
+/*RESPONSIVENESS*/
 @media (max-width: 768px) {
   .story-grid {
     grid-template-columns: 1fr;
   }
 }
-
-
-/* Make table and list span full width on small screens */
 @media (max-width: 768px) {
   .prep-grid {
     grid-template-columns: 1fr;
@@ -221,4 +237,14 @@ footer {
   .go-pic-row {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 768px) {
+  .blade-prep-row,
+  .blade-prep-grid {
+    flex-direction: column;
+  }
+}
+.hero-pic img {
+  max-height: 300px;
+  object-fit: cover;
 }
