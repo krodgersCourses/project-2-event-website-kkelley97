@@ -244,6 +244,98 @@ footer {
   text-align: center;
   border-top: 3px solid green; 
 }
+footer a {
+  color: #e6ffe6;               /* Matches your footer text color */
+  text-decoration: none;        /* Removes underline */
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: whitesmoke;               /* Lighter on hover */
+  text-decoration: underline;   /* Optional hover effect */
+}
+footer {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #004d3c;
+  color: #e6ffe6;
+  text-align: center;
+  border-top: 3px solid green;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/*SOURCES*/
+.srcs-page {
+  background-color: #e6ffe6;
+  font-family: 'gadugi', sans-serif;
+  color: #e6ffe6;
+  font-size: 18px;
+  padding: 1rem;
+  margin: 0;
+}
+.srcs-nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home-button {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.5rem 1.25rem;
+  background-color: #004d3c;
+  color: #e6ffe6;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #004d3c;
+}
+.home-button {
+  display: block;
+  width: max-content;
+  margin: 1rem auto;
+}
+
+.home-button:hover {
+  background-color: #ccffcc;
+  color: #004d3c;
+}
+
+.sources-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #003300;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 77, 60, 0.15);
+}
+.sources-container h3 {
+  font-size: 1.75rem;
+  color: #e6ffe6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sources-container a {
+  color: whitesmoke;
+  word-break: break-word;
+}
+
+.sources-container ul {
+  margin-top: 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+.sources-container p,
+.sources-container li {
+  line-height: 1.5;
+}
+
 
 /*RESPONSIVENESS*/
 @media (max-width: 768px) {
@@ -280,4 +372,14 @@ footer {
 .hero-pic img {
   max-height: 500px;
   object-fit: cover;
+}
+@media (max-width: 600px) {
+  .sources-container {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .sources-container h3 {
+    font-size: 1.5rem;
+  }
 }
